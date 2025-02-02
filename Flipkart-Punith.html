@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PunithKumar-Flipkart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .navbar{
+            background-color:#2874f0;
+            padding:10px 0px;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .plus-color{
+            color:yellow;
+            font-weight:900;
+        }
+        .logo p{
+            color:white;
+            position:relative;
+            top:-5px;
+        }
+        .search{
+            background-color: white;
+            padding:8px;
+            width: 420px;
+            margin:0px 15px;
+            display:flex;
+            justify-content:space-between;
+            color:#2874f0;
+            border-radius:4px;
+        }
+        .search input{
+            width:380px;
+            border:none;
+            outline:none;
+            font-size:14px;
+            box-shadow:-7px -7px 10px rgba(0,0,0,0.1);
+        }
+        .loginBtn{
+            padding:7px 30px;
+            font-size:16px;
+            font-weight: 550;
+            border:none;
+            outline:none;
+            color:#2874f0;
+            cursor:pointer;
+        }
+        .Navlink{
+            margin:0px 20px;
+            font-size:18px;
+            color:white;
+            text-decoration: none;
+        }
+        .Navlink i{
+           font-size: 25px;
+        }
+        .angledown{
+            font-size: 10px;
+        }
+        .panel-all{
+            height:90px;
+            background-color:white;
+            display:flex;
+            align-items:center;
+            justify-content:space-evenly;
+        }
+        .category-item {
+            text-align: center;
+        }
+        .category-item img {
+            display: block;
+            margin: 0 auto;
+        }
+        .color-back{
+           background-color:azure;
+           top:5px;
+           padding:10px 0px;
+           position:relative;
+           height: 50px;
+           display:flex;
+        }
+        .products{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            margin: 20px;
+            cursor:pointer;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+        .product h3 {
+            font-size: 18px;
+            color: #212121;
+        }
+        .product p {
+            font-size: 16px;
+            color: #878787;
+        }
+        .product span {
+            font-size: 20px;
+            color: #fb641b;
+            font-weight: bold;
+        }
+        .shop-section{
+            display:flex;
+            justify-content:space-evenly;
+            background-color: #e2e7e6;
+        }
+        .foot-panel1{
+            background-color:#37475a;
+            color:white;
+            height:50px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size: 0.85rem;
+            cursor:pointer;
+        }
+        .foot-panel2{
+            background-color: #222f3d;
+            color:white;
+            height:300px;
+            display:flex;
+            justify-content: space-evenly;
+            cursor:pointer;
+        }
+        ul{
+            margin-top: 20px;
+        }
+        ul a {
+            display:block;
+            font-size:0.85rem;
+            margin-top: 10px;
+            color:#dddddd;
+        }
+        .Main-section{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="Flipkart Logo" width="70px" height="20px">
+                <p>Explore
+                <span class="plus-color">plus</span>
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/plus-brand-bc165b.svg" width="75px" height="20px">
+            </p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search for products,brands and more">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <button class="loginBtn">Login</button>
+            <a href="#" class="Navlink">Become a Seller</a>
+            <a href="#" class="Navlink">
+                More
+                <i class="fa-solid fa-angle-down"class="angledown"></i>
+            </a>
+            <a href="#"class="Navlink">Cart
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <div>
+            <div class="panel">
+                <div class="panel-all">
+                    <div class="category-item">
+                        <img src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="Groceries">
+                        <b>Groceries</b>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" alt="Mobiles">
+                        <b>Mobiles</b>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://rukminim1.flixcart.com/flap/80/80/image/0ff199d1bd27eb98.png?q=100" alt="Appliances">
+                        <b>Appliances</b>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://rukminim1.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100" alt="Travel">
+                        <b>Travel</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="Main-section">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/8a89ee09acc1a9e5.jpg?q=20" alt="Main">
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/312/312/j9d3bm80/mobile/k/x/a/apple-iphone-x-mqa82hn-a-original-imaeyysgmypxmazk.jpeg?q=70" alt="Product Image">
+            <h3>Apple iPhone X (Silver, 64 GB)</h3>
+            <p>4.6 ★ (2,34,567 Ratings) | (45,678 Reviews)</p>
+            <span>₹90,999</span>
+        </div>
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/9/r/p/-original-imaggj68adhpmr7y.jpeg?q=70" alt="Product Image">
+            <h3>Samsung Galaxy S9 Plus (Coral Blue, 64 GB)</h3>
+            <p>4.5 ★ (1,23,456 Ratings) | (12,345 Reviews)</p>
+            <span>₹64,900</span>
+        </div>
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/312/312/krdtlzk0/computer/l/k/r/na-laptop-dell-original-imag57f9psmfjcxs.jpeg?q=70" alt="Product Image">
+            <h3>Dell Inspiron Core i5 8th Gen Laptop</h3>
+            <p>4.4 ★ (56,789 Ratings) | (6,789 Reviews)</p>
+            <span>₹75,990</span>
+        </div>
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/312/312/l3bx5e80/television/0/w/q/-original-imageh37h34rehqf.jpeg?q=70" alt="Product Image">
+            <h3>Sony Bravia Full HD LED Smart TV</h3>
+            <p>4.3 ★ (34,567 Ratings) | (3,456 Reviews)</p>
+            <span>₹98,999</span>
+        </div>
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lunch-box/a/q/y/1100-lunch-box-for-school-children-speack-2-original-imagqtqzfh99pxbq.jpeg?q=70" alt="Product Image">
+            <h3>Lunch boxes</h3>
+            <p>4.3 ★ (56,124 Ratings) | (5,456 Reviews)</p>
+            <span>₹999</span>
+        </div>
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/d/q/r/-original-imagp6skt77zsdjt.jpeg?q=70" alt="Product Image">
+            <h3>Noise buds</h3>
+            <p>4.3 ★ (54,597 Ratings) | (3,456 Reviews)</p>
+            <span>₹1,999</span>
+        </div>
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/remote-control-toy/z/a/f/3d-fast-steering-remote-car-toys-world-original-imaggrrzw7vtqbpy.jpeg?q=70" alt="Product Image">
+            <h3>3D Fast Steering Remote Car</h3>
+            <p>4.3 ★ (34,567 Ratings) | (3,456 Reviews)</p>
+            <span>₹2,500</span>
+        </div>
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/refrigerator-new/y/m/y/-original-imagqujvuhqfnmqj.jpeg?q=70" alt="Product Image">
+            <h3>whirlpool-192-l-direct-cool-single-door-refrigerator</h3>
+            <p>4.3 ★ (34,567 Ratings) | (3,456 Reviews)</p>
+            <span>₹20,999</span>
+        </div>
+    </div>
+    <div class="foot-panel1">
+        Back to Top
+    </div>
+    <div class="foot-panel2">
+        <ul>
+            <p>Get to know us</p>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">About Flipkart</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Flipkart Devices</a>
+            <a href="#">Flipkart Science</a>
+        </ul>
+        <ul>
+            <p>Make money with us</p>
+            <a href="#">Sell products on Flipkart</a>
+            <a href="#">Sell apps on Flipkart</a>
+            <a href="#">Become an Affiliate</a>
+            <a href="#">Advertise your products</a>
+            <a href="#">Self-Publish with us</a>
+            <a href="#">Host an Flipkart Hub</a>
+        </ul>
+        <ul>
+            <p>Flipkart Payment products</p>
+            <a href="#">Flipkart Business cards</a>
+            <a href="#">Shop with Points</a>
+            <a href="#">Reload your balance</a>
+            <a href="#">Flipkart Currency Converter</a>
+        </ul>
+        <ul>
+            <p>Let Us Help you</p>
+            <a href="#">Flipkart and COVID-19</a>
+            <a href="#">Your account</a>
+            <a href="#">Your Order</a>
+            <a href="#">Shopping Rates & Replacements</a>
+            <a href="#">Returns & Replacements</a>
+            <a href="#">Flipkart Assistant</a>
+            <a href="#">Help</a>
+        </ul>
+    </div>
+</body>
+</html>
